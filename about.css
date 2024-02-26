@@ -179,6 +179,8 @@ section
 {
     display: flex;
     flex-wrap: wrap;
+  align-content: center;
+    justify-content: center;
     gap: 145px 125px;
     margin: 120px 0;
 }
