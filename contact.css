@@ -1,0 +1,308 @@
+/* @import url('clash-display.css'); */
+.bricolage-grotesque-uniquifier {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: Clash Display, sans-serif; */
+    font-family: "Bricolage Grotesque", sans-serif;
+
+}
+body
+{
+    overflow-x: hidden;
+}
+button
+{
+    cursor: pointer;
+}
+.container
+{
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0;
+}
+.gradient
+{
+    /* border: 1px solid black; */
+    position: relative;
+    margin: auto;
+    /* height: 100px; */
+    width: 1300px;
+}
+.gradient img
+{
+    /* border: 1px solid red; */
+    width: 1500px;
+    /* width: 500px; */
+    position: absolute;
+    top: -300px;
+    left: -500px;
+    z-index: -1;
+}
+.headings
+{
+    text-align: center;
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+main
+{
+    margin-top: 50px;
+}
+.sub-heading
+{
+    text-align: center;
+    font-size: 28px;
+}
+
+.form-container
+{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid green; */
+    margin: 75px auto 70px auto;
+    max-width: 1240px;
+    height: fit-content;
+    background-color: #C2B2E6;
+
+}
+.get-in-touch hr
+{
+    border: none;
+    background-color: #16122A;
+    height: 1px;
+}
+.get-in-touch,
+.send-msg
+{
+    /* height: 100%; */
+    padding: 60px 40px 40px 65px;
+}
+
+.get-in-touch h1,
+.send-msg h1
+{
+    font-size: 50px;
+    font-weight: 500;
+}
+.get-in-touch
+{
+    width: 40%;
+    /* background-color: #C2B2E6; */
+    color: #16122A;
+}
+.send-msg
+{
+    background-color: #16122A;
+    color: #C2B2E6;
+    width: 60%;
+    /* height: 100%; */
+}
+.get-in-touch p
+{
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 27px;
+}
+.contact-info
+{
+    margin: 24px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    /* justify-content: center; */
+}
+.contact-info .info p
+{
+    font-size: 18px;
+    margin: 0;
+}
+.socials-media p
+{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.socials-media-icons
+{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 40px;
+}
+form
+{
+    margin-top: 40px;
+}
+.user-info
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px 15px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    /* padding: 100px; */
+}
+
+.user-info div label,
+#msg-label
+{
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.user-info div
+{   
+    width: 300px;
+}
+
+.user-info div input
+{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #C2B2E6;
+    height: 45px;
+    color: #C2B2E6;
+    outline: none;
+    border-radius: 50px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+#msg
+{
+    background-color: transparent;
+    border: 1px solid #C2B2E6;
+    width: 100%;
+    height: 45px;
+    color: #C2B2E6;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    min-height: 148px;
+    resize: none;
+    font-size: 18px;
+}
+#send
+{
+    display: block;
+    margin: 50px auto 0 auto;
+    background-color: #C2B2E6;
+    border: none;
+    width: 300px;
+    height: 45px;
+    border-radius: 50px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #16122A;
+    cursor: pointer;
+}
+iframe
+{
+    width: 100%;
+    margin: 0;
+}
+
+@media (width <= 1217px)
+{
+    .user-info div
+    {   
+        width:100%;
+    }
+}
+
+
+@media (width <= 1100px)
+{
+    .container
+    {
+        margin: 0 20px 0 20px;
+    }
+    .headings
+    {
+        font-size: 35px;
+    }
+    .sub-heading
+    {
+        text-align: center;
+        font-size: 18px;
+    }
+    .get-in-touch h1,
+    .send-msg h1
+    {
+        font-size: 30px;
+    }
+    .get-in-touch p
+    {
+        font-size: 15px;
+    }
+    #send
+    {
+        width: 225px;
+        font-size: 25px;
+    }
+}
+
+@media (width <= 800px)
+{
+    .form-container
+    {
+        display: flex;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        flex-direction: column-reverse;
+        justify-content: center;
+        /* border: 1px solid green; */
+        margin: 75px auto 0 auto;
+        max-width: 1240px;
+        height: fit-content;
+        background-color: #C2B2E6;
+    }
+    .send-msg h1
+    {
+        text-align: center;
+    }
+    .get-in-touch p
+    {
+        margin-top: 5px;
+    }
+
+    .get-in-touch
+    {
+        width: 100%;
+        color: #16122A;
+        padding: 25px 50px;
+    }
+    .send-msg
+    {
+        background-color: #16122A;
+        color: #C2B2E6;
+        width: 100%;
+        /* height: 100%; */
+        padding: 50px 25px;
+    }
+    .user-info div input
+    {
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid #C2B2E6;
+        height: 45px;
+        color: #C2B2E6;
+        outline: none;
+        border-radius: 15px;
+        padding-left: 20px;
+    }
+
+}

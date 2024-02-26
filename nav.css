@@ -1,0 +1,143 @@
+@import url('clash-display.css');
+
+header
+{
+    margin: 40px auto 20px auto;
+    max-width: 1237px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* font-family: Clash Display, sans-serif; */
+    font-family: 'ClashDisplay-Variable', sans-serif;
+
+}
+.sidebar
+{
+    display: none;
+    position: absolute;
+    background-color: #c2b2e6b9;
+    backdrop-filter: blur(10px);
+    height: 100dvh;
+    width: 70%;
+    top: 0;
+    right: 0;
+    text-align: right;
+    padding: 50px 20px;
+    margin-right: -100vw;
+    transition-duration: 0.7s;
+    z-index: 1000;
+}
+.btn-container
+{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    /* border: 1px solid #16122A; */
+    margin-top: 60px;
+}
+#sidebar-signup,#sidebar-login
+{
+    background-color: transparent;
+    border: 1px solid #16122A;
+    border-radius: 50px;
+    font-size: 30px;
+    width: 260px;
+    height: 55px;
+}
+#sidebar-signup
+{
+    font-weight: 300;
+}
+#sidebar-login
+{
+    font-weight: 500;
+    background-color: #16122A;
+    color: #c2b2e6;
+
+}
+.sidebar a
+{
+    text-decoration: none;
+    color: #16122A;
+    font-size: 18px;
+    display: block;
+    line-height: 165%;
+    font-size: 40px;
+    font-weight: 500;
+}
+#cross-icon
+{
+    width: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+#cross-icon img
+{
+    width: 100%;
+}
+
+#nav-logo
+{
+    width: 90px;
+}
+nav
+{
+    margin-right: 10%;
+}
+nav a
+{
+    text-decoration: none;
+    color: #16122A;
+    margin-right: 30px;
+    font-size: 18px;
+}
+#sign-up
+{
+    background-color: transparent;
+    padding: 8px 46px;
+    border-radius: 50px;
+    border: 1px solid #16122A;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+#ham-icon
+{
+    cursor: pointer;
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+#ham-icon img
+{
+    width: 100%;
+}
+
+@media (width <= 1313px)
+{
+    nav a,#sign-up
+    {
+        font-size: 15px;
+    }
+}
+
+@media (width <= 800px)
+{
+    nav a,#sign-up
+    {
+        display: none;
+    }
+    #ham-icon
+    {
+        display: block;
+        width: 40px;
+    }
+    #nav-logo
+    {
+    width: 60px;
+    }
+}
